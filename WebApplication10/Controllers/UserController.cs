@@ -8,7 +8,7 @@ namespace WebApplication10.Controllers
 {
     public class UserController : Controller
     {
-        public ViewResult SignUp()
+        public ViewResult SignIn()
         {
             return View();
         }

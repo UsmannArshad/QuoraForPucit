@@ -50,7 +50,7 @@ namespace WebApplication10
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=User}/{action=SignUp}/{id?}");
+                    pattern: "{controller=User}/{action=SignIn}/{id?}");
             });
         }
     }

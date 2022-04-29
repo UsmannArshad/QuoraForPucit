@@ -12,7 +12,6 @@ C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\scop
 C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\WebApplication10.TagHelpers.input.cache
 C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\WebApplication10.TagHelpers.output.cache
 C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\WebApplication10.RazorCoreGenerate.cache
-C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\Razor\Views\User\SignUp.cshtml.g.cs
 C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\WebApplication10.RazorTargetAssemblyInfo.cache
 C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\WebApplication10.RazorTargetAssemblyInfo.cs
 C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\WebApplication10.dll
@@ -32,3 +31,4 @@ C:\Users\HP\source\repos\WebApplication10\WebApplication10\bin\Debug\net5.0\WebA
 C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\WebApplication10.Views.pdb
 C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\WebApplication10.genruntimeconfig.cache
 C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\WebApplication10.csproj.CopyComplete
+C:\Users\HP\source\repos\WebApplication10\WebApplication10\obj\Debug\net5.0\Razor\Views\User\SignIn.cshtml.g.cs
