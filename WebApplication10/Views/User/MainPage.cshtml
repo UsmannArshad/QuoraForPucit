@@ -1,0 +1,23 @@
+﻿@model List<WebApplication10.Models.User>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>UserName</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (WebApplication10.Models.User s in Model)
+        {
+        <tr>
+            <td>@s.Name</td>
+            <td>@s.Age</td>
+            <td>@s.Username</td>
+            <td>@s.Password</td>
+        </tr>
+        }
+
+    </tbody>
+</table>
