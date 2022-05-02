@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\WebApplication10\\WebApplication10\\WebApplication10.csproj": {}
+    "C:\\Users\\HP\\source\\repos\\Quora_For_Pucit\\WebApplication10\\WebApplication10.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\WebApplication10\\WebApplication10\\WebApplication10.csproj": {
+    "C:\\Users\\HP\\source\\repos\\Quora_For_Pucit\\WebApplication10\\WebApplication10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\WebApplication10\\WebApplication10\\WebApplication10.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Quora_For_Pucit\\WebApplication10\\WebApplication10.csproj",
         "projectName": "WebApplication10",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\WebApplication10\\WebApplication10\\WebApplication10.csproj",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\Quora_For_Pucit\\WebApplication10\\WebApplication10.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\WebApplication10\\WebApplication10\\obj\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\Quora_For_Pucit\\WebApplication10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

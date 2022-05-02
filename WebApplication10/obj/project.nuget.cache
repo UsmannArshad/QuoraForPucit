@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BzD1dRUPFATfNexxnpyqQHC9gv8nIlHX4wHgrVssUq5BjirZDYo6c4yR4JRral/NAhvju0SJfpkUMiKwmqXUeQ==",
+  "dgSpecHash": "60yJw0Hej014fnYLO3fI/F1EfStcfo5uR5JFpQNF9lg2xD+OtYFzK998uxKN5/Jvgx/9YAHCNglVXpYiAhkrGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\repos\\WebApplication10\\WebApplication10\\WebApplication10.csproj",
+  "projectFilePath": "C:\\Users\\HP\\source\\repos\\Quora_For_Pucit\\WebApplication10\\WebApplication10.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

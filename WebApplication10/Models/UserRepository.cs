@@ -10,7 +10,7 @@ namespace WebApplication10.Models
     {
         public static void AddUser(User u)
         {
-            string constring = @"Data Source = (localdb)\ProjectsV13; Initial Catalog = Quora_UserData; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+            string constring = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=QuoraForPucit_UserData;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "Insert into Users(Email,Password,Name,Age) VALUES(@a,@b,@c,@d)";
@@ -27,7 +27,7 @@ namespace WebApplication10.Models
         }
         public static bool CheckCredentials(string username, int pwd)
         {
-            string constring = @"Data Source = (localdb)\ProjectsV13; Initial Catalog = Quora_UserData; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+            string constring = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=QuoraForPucit_UserData;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "Select * from Users where Email=@u AND Password=@p";
@@ -49,7 +49,7 @@ namespace WebApplication10.Models
         public static List<User> DisplayAllUsers()
         {
             List<User> listofuser = new List<User>();
-            string constring = @"Data Source = (localdb)\ProjectsV13; Initial Catalog = Quora_UserData; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+            string constring = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=QuoraForPucit_UserData;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "Select * from Users";
@@ -68,7 +68,7 @@ namespace WebApplication10.Models
         }
         public static bool IsUsernameUnique(string username)
         {
-            string constring = @"Data Source = (localdb)\ProjectsV13; Initial Catalog = Quora_UserData; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+            string constring = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=QuoraForPucit_UserData;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "Select * from Users where Email=@u";
