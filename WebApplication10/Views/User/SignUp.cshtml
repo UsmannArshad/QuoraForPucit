@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="@Url.Content("~/css/Style.css")">
 </head>
 <body>
+    <div asp-validation-summary="All" role="alert" style="display:none">
+    </div>
     <div class="row">
         <div class="col-lg-5 m-auto">
             <div class="card mt-5 bg-light">
@@ -29,19 +31,23 @@
                     <form method="post" action="SignUp">
                         <div class="form-group mb-3">
                             <label asp-for="Name">Name</label>
-                            <input asp-for="Name" class="form-control mt-2" required>
+                            <input asp-for="Name" class="form-control mt-2">
+                            <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
                         <div class="form-group mb-3">
                             <label asp-for="Age">Age</label>
-                            <input asp-for="Age" class="form-control mt-2" required>
+                            <input asp-for="Age" class="form-control mt-2">
+                            <span asp-validation-for="Age" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <label asp-for="Username" class="form-label">Email address</label>
-                            <input asp-for="Username" class="form-control" required aria-describedby="emailHelp">
+                            <input asp-for="Username" class="form-control" aria-describedby="emailHelp">
+                            <span asp-validation-for="Username" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <label asp-for="Password" class="form-label">Password</label>
-                            <input asp-for="Password" class="form-control" required aria-describedby="emailHelp">
+                            <input asp-for="Password" class="form-control" aria-describedby="emailHelp">
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
 
                         <div class="form-group">

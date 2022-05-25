@@ -18,16 +18,23 @@ namespace WebApplication10.Controllers
         [HttpPost]
         public ViewResult SignUp(User u)
         {
-            bool check = UserRepository.IsUsernameUnique(u.Username);
-            if(check==true)
+            if (ModelState.IsValid)
             {
-                UserRepository.AddUser(u);
-                List<User> users = UserRepository.DisplayAllUsers();
-                return View("MainPage", users);
+                bool check = UserRepository.IsUsernameUnique(u.Username);
+                if (check == true)
+                {
+                    UserRepository.AddUser(u);
+                    List<User> users = UserRepository.DisplayAllUsers();
+                    return View("MainPage", users);
+                }
+                else
+                {
+                    return View("DeniedSignUp");
+                }
             }
             else
             {
-                return View("DeniedSignUp");
+                return View();
             }
         }
         [HttpGet]
@@ -39,16 +46,17 @@ namespace WebApplication10.Controllers
         [HttpPost]
         public ViewResult SignIn(string username,int password)
         {
-            bool check=UserRepository.CheckCredentials(username, password);
-            if(check==true)
-            {
-                List<User> users = UserRepository.DisplayAllUsers();
-                return View("MainPage",users);
-            }
-            else
-            {
-                return View("DeniedLogin");
-            }
+
+                bool check = UserRepository.CheckCredentials(username, password);
+                if (check == true)
+                {
+                    List<User> users = UserRepository.DisplayAllUsers();
+                    return View("MainPage", users);
+                }
+                else
+                {
+                    return View("DeniedLogin");
+                }
         }
         public ViewResult MainPage()
         {
