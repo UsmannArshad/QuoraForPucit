@@ -31,9 +31,10 @@ namespace WebApplication10.Controllers
             }
         }
         [HttpGet]
-        public ViewResult SignIn()
+        public IActionResult SignIn()
         {
             return View();
+            //return RedirectToAction("Index", "Home");
         }
         [HttpPost]
         public ViewResult SignIn(string username,int password)
@@ -48,6 +49,18 @@ namespace WebApplication10.Controllers
             {
                 return View("DeniedLogin");
             }
+        }
+        public ViewResult MainPage()
+        {
+            return View();
+        }
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+        public ViewResult ContactUs()
+        {
+            return View();
         }
     }
 }
