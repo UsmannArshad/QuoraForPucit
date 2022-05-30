@@ -58,15 +58,22 @@ namespace WebApplication10.Controllers
                     return View("DeniedLogin");
                 }
         }
+        [Route("/User/MainPage",Name = "usermainpage")]
         public ViewResult MainPage()
         {
             return View();
         }
+        [Route("/User/AboutUs", Name = "aboutuss")]
         public ViewResult AboutUs()
         {
             return View();
         }
+        [Route("/User/ContactUs", Name = "contactuss")]
         public ViewResult ContactUs()
+        {
+            return View();
+        }
+        public ViewResult AskQuestion()
         {
             return View();
         }

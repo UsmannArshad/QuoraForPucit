@@ -1,69 +1,15 @@
 ﻿@{
-    Layout = "_Layout";
+    ViewData["Title"] = "Main Page";
 }
 <div class="container mr-auto mt-50" id="question">
     <div class="headofquestion border border-dark">
         <p class="font-weight-bold" style="font-size: 25px;"><i class="fa fa-star"></i> Questions for you</p>
     </div>
     <div class="questions">
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn" aria-pressed="true"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
-        <div class="question-item border border-dark">
-            <p class="question font-weight-bold">How to insert data in table using MySQL?</p>
-            <button class="btn like-btn" aria-pressed="true"><i class="fa fa-thumbs-up"></i></button>
-            <button class="btn dislike-btn"><i class="fa fa-thumbs-down"></i></button>
-            <button class="btn btn-success">Answer</button>
-        </div>
+        @for (int i = 0; i < 15; i++)
+        {
+        <partial name="~/Views/User/_Partial.cshtml"/>
+        }
     </div>
+    <script src="~/js/app.js"></script>
+</div>
